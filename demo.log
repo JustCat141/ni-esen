@@ -2,3 +2,34 @@
 1713252281764:help create book
 1713252307508:create book title author publisher 10
 1713252828185:list books
+1713853188063:create bookhelp
+1713853193961:help create book
+1713853215771:create book title author publisher 2599
+1713854295070:delete book 1
+1713854327708:delete book 2
+1713854337156:delete book 3
+1713855094387:update book 1 Én
+1713855141692:update book 1 title author publisher price
+1713855155259:pdate book 1 title author publisher 10
+1713855179770:update book 1 asdsad
+1713855203024:list book
+1713855207449:list books
+1713855217409:update book 1
+1713855248954:update book 1 --publisher DE
+1713855256144:list books
+1713855314434:update book 1 --publisher DE
+1713855318136:list books
+1713856303928:create bookstore loc price 10
+1713856319142:create bookstore loc 1.01 10
+1713856381335:list bookstores
+1713857006549:delete bookstore 1
+1713857413308:create bookstore 1 loc 10 1
+1713857427155:create bookstore loc 10 1
+1713857431769:list bookstores
+1713857451395:update bookstore 6 --location asd
+1713857454841:list books
+1713857507302:update bookstore --location asdassda
+1713857520748:update bookstore 1 --location asdassda
+1713857526634:list bookstores
+1713857535762:delete bookstore 1
+1713857539025:list bookstores
