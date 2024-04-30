@@ -57,4 +57,8 @@ public class BookService {
 
         bookRepository.save(book);
     }
+
+    public Book findById(Long id) {
+        return bookRepository.findById(id).orElseThrow(() -> new RuntimeException("Cannot find book!"));
+    }
 }

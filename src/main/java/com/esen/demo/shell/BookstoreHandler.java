@@ -51,4 +51,25 @@ public class BookstoreHandler {
                                 @ShellOption(defaultValue = ShellOption.NULL) Double moneyInCashRegister) {
         bookstoreService.updateBookstore(id,location,priceModifier,moneyInCashRegister);
     }
+
+    @ShellMethod(value = "Lists the bookstores inventory", key = "list stock")
+    public String listInventory(Long id) {
+        var bookStore = bookstoreService.findById(id);
+
+        return bookStore.getInventory()
+                .entrySet()
+                .stream()
+                .map(bookIntegerEntry -> "Book ID: %s, Title: %s, Author: %s, Copies: %s".formatted(
+                        bookIntegerEntry.getKey().getId(),
+                        bookIntegerEntry.getKey().getTitle(),
+                        bookIntegerEntry.getKey().getAuthor(),
+                        bookIntegerEntry.getValue()
+                )).collect(Collectors.joining(System.lineSeparator()));
+    }
+
+    // tudjunk hozzáadni, Booksore, Book, Amount
+    @ShellMethod(value = "Add book to the stores inventory", key = "add stock")
+    public void addStock(Long bookStoreId, Long bookId, Integer amount) {
+        bookstoreService.changeStock(bookStoreId, bookId, amount);
+    }
 }
