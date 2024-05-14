@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.esen</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>bookstore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for a Bookstore project?</description>
